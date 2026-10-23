@@ -58,9 +58,10 @@ Monitors Total Waste (178K kg), CO2 (8.25K), and Water (11M L). Visualizes waste
 
 hse-safety-dashboard/
 ├── data/
-│   └── HSE_Data_Synthetic.xlsx
+│   ├── HSE_Raw_Data.xlsx        # Original messy data
+│   └── HSE_Cleaned_Data.xlsx    # Cleaned data ready for Power BI
 ├── dashboard/
-│   └── HSE_Safety_Metrics.pbix
+│   └── HSE_Safety_Metrics.pbix  # Power BI Dashboard File
 └── README.md
 
 ```
