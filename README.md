@@ -1,15 +1,16 @@
-# HSE Safety Performance Metric Analysis (Power BI)
+# HSE Safety Performance Metric Analysis (Excel & Power BI)
 
 [![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://www.microsoft.com/)
 
 > **134K Man-hours. 128 Open Incidents. 1 comprehensive safety dataset.**
-> Here's how I transformed raw HSE data into a 4-page interactive Power BI dashboard that reveals aging safety actions, high-risk departments, and environmental footprints.
+> Here's how I cleaned raw HSE data in Excel and transformed it into a 4-page interactive Power BI dashboard that reveals aging safety actions, high-risk departments, and environmental footprints.
 
 > **Note:** Data was synthetically generated to mirror real site data.
 
 ## 📌 Project Overview
 
-This project simulates the workflow of an HSE (Health, Safety, and Environment) Analyst. The goal is to clean, model, and visualize operational safety data to provide executive leadership with a decision-ready dashboard. This is a static reporting dashboard (not automated) built to monitor Safety, Operations, and Environment.
+This project simulates the workflow of an HSE (Health, Safety, and Environment) Analyst. The goal was to take raw, messy operational safety logs, clean them in Excel, and visualize the data in Power BI to provide executive leadership with a decision-ready dashboard. This is a static reporting dashboard (not automated) built to monitor Safety, Operations, and Environment.
 
 **Time Period:** 2026 (H1)
 **Total Man-hours:** 134,000
@@ -17,10 +18,19 @@ This project simulates the workflow of an HSE (Health, Safety, and Environment) 
 
 ## 🎯 Business Objectives
 
+- Clean and validate raw HSE incident and inspection data.
 - Analyze incident trends, severity, and Lost Time Injuries (LTIs).
 - Track the status of safety actions, Permits to Work (PTWs), and contractor compliance.
 - Monitor environmental metrics including Waste, CO2, and Water usage.
-- Identify high-risk departments and equipment failures.
+
+## 🧩 Pipeline Architecture
+
+```mermaid
+graph LR
+    A[Raw HSE Logs<br>Messy Data] --> B(Excel: Data Cleaning & Validation);
+    B --> C[Cleaned Excel Dataset<br>0 nulls, standardized formats];
+    C --> D(Power BI: Data Modeling & DAX);
+    D --> E[4-Page Interactive Dashboard];.
 
 ## 🛠️ Tools & Skills Demonstrated
 
