@@ -23,15 +23,6 @@ This project simulates the workflow of an HSE (Health, Safety, and Environment) 
 - Track the status of safety actions, Permits to Work (PTWs), and contractor compliance.
 - Monitor environmental metrics including Waste, CO2, and Water usage.
 
-## 🧩 Pipeline Architecture
-
-```mermaid
-graph LR
-    A[Raw HSE Logs<br>Messy Data] --> B(Excel: Data Cleaning & Validation);
-    B --> C[Cleaned Excel Dataset<br>0 nulls, standardized formats];
-    C --> D(Power BI: Data Modeling & DAX);
-    D --> E[4-Page Interactive Dashboard];.
-
 ## 🛠️ Tools & Skills Demonstrated
 
 | Stage | Tool | Key Skills |
